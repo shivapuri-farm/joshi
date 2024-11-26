@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cow and Vegetable Farm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, #f9f9f9, #f1ffe7);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2rem;
+      color: #2a7b31;
+    }
+
+    header>p {
+      text-align: center;
+      padding: 5px;
+      background-color: #333;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    .image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* For small mobile devices */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 images in a row */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 images in a row for the smallest devices */
+  }
+}
+
+  
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      border-radius: 15px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .media-container {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .media-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      color: #000000;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      color: #0603ca;
+    }
+
+    footer {
+      background: #2a7b31;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .blog {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .blog h2 {
+      color: #13a500;
+      margin-bottom: 15px;
+    }
+
+    .blog img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .blog p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #f1ffe7;
+    }
+
+    .qr-code {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .qr-code img {
+      max-width: 150px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      .product-title {
+        font-size: 1.2rem;
+      }
+
+      .product-price {
+        font-size: 1rem;
+      }
+    }
+
+    .social-links {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.social-links h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  background: #007b5e;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #00593d;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <p><marquee>This Rate list is for Mangshir & Poush 2081 B.S</marquee> </p>
+    <div style="text-align: center; margin: 20px;">
+        <a href="tel:+9779864258042" 
+           style="display: inline-block; background: #df0000; color: white; font-size: 1.2rem; font-weight: bold; 
+                  padding: 10px 20px; border-radius: 8px; text-decoration: none; transition: background 0.3s ease;">
+          📞 Home Delivery आर्डर को लागि - 9864258042 फोन Call Now (CLICK here)
+        </a>
+      </div>
+      
+    
+    
+  </header>
+
+  <h1>Our Products</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="media-container">
+        <img src="img/milk.jpeg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Fresh Milk</div>
+        <div class="product-price">Rs. 125 liter
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="media-container">
+        <img src="img/local.jpeg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Local Chicken</div>
+        <div class="product-price">Rs. 2000 (full)</div>
+      </div>
+    </div>
+
+    
+    <div class="product-card">
+        <div class="media-container">
+          <img src="img/giriraj.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Giriraj Chicken</div>
+          <div class="product-price">Rs. 1500 (Full)</div>
+        </div>
+      </div>
+
+      
+    <div class="product-card">
+        <div class="media-container">
+          <img src="img/fertilizer.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Cow Fertilizer</div>
+          <div class="product-price">Rs.300 for 50 kg</div>
+        </div>
+      </div>
+
+      
+    <div class="product-card">
+        <div class="media-container">
+          <img src="img/flower.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Flowers</div>
+          <div class="product-price">Rs. 200 kg</div>
+        </div>
+      </div>
+
+      
+    <div class="product-card">
+        <div class="media-container">
+          <img src="img/greensaag.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Green Saag</div>
+          <div class="product-price">Order anusar</div>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="media-container">
+          <img src="img/cow.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Cow (15 liter/day)</div>
+          <div class="product-price">Rs. 1,50,000</div>
+        </div>
+      </div>
+
+    <div class="product-card">
+      <div class="media-container">
+        <img src="img/ghee.jpeg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Ghee</div>
+        <div class="product-price">Rs. 600 for half kg</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="blog">
+    <h2>हाम्रो बारेमा : जोशी गाई कृषि फार्म </h2>
+    <img src="img/cow.webp" alt="Farm Cover">
+    <p>हाम्रो गाई तथा तरकारी फार्म चार वर्षअघि कोभिड लकडाउनपछिको कठिन समयबाट शुरु गरिएको हो। हामीले काठमाण्डौ सहर वरपरको दैनिक जीवनलाई सहज बनाउनका लागि ताजा दूध र जैविक तरकारी घरमै पुर्‍याउने सेवाको सुरुवात गरेका छौं। स्वस्थ र ताजा उत्पादनका लागि हाम्रो फार्मले परम्परागत कृषि अभ्यास र आधुनिक प्रविधिको मिश्रणलाई प्राथमिकता दिएको छ। धन्यवाद, स्थानीय किसानहरूलाई साथ र समर्थनका लागि!</p>
+    <div class="image-container">
+      <img src="img/org (1).jpeg" alt="Image 1">
+      <img src="img/org (2).jpeg" alt="Image 2">
+      <img src="img/org (3).jpeg" alt="Image 3">
+      <img src="img/org (4).jpeg" alt="Image 1">
+      <img src="img/org (5).jpeg" alt="Image 2">
+      <img src="img/org (6).jpeg" alt="Image 3">
+      <img src="img/org (7).jpeg" alt="Image 2">
+      <img src="img/org (8).jpeg" alt="Image 3">
+    </div>
+    
+    <p>Located in the heart of the countryside, we take pride in our free-range cows and pesticide-free vegetables. Thank you for supporting local farmers!</p>
+
+    <div class="social-links">
+        <h3>Contact Us</h3>
+        <a href="tel:+9779864258042">📞 9864258042</a>
+        
+      </div>
+      
+
+    <div class="qr-code">
+      <h3>Scan to Pay</h3>
+      <img src="img/qr.jpg" alt="QR Code">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Cow and Vegetable Farm. All rights reserved.</p>
+  </footer>
+</body>
+</html>
